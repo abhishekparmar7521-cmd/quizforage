@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizForge AI | Smart Quiz Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>QuizForge AI</h1>
+        <p>Learn smarter with AI-powered quizzes.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="quiz-setup">
+            <h2>Create Your Quiz</h2>
+            <p>Choose a topic and let AI prepare your quiz.</p>
+
+            <label for="topic">Enter your topic</label>
+            <input
+                type="text"
+                id="topic"
+                placeholder="e.g. JavaScript, Science, History"
+            >
+
+            <label for="difficulty">Choose difficulty</label>
+            <select id="difficulty">
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+
+            <label for="questionCount">Number of questions</label>
+            <select id="questionCount">
+                <option value="5">5 Questions</option>
+                <option value="10">10 Questions</option>
+            </select>
+
+            <button id="generateBtn">Generate Quiz</button>
+
+            <p id="message" role="status"></p>
+        </section>
+
+        <section id="quizSection" hidden>
+            <h2 id="quizTitle">Your Quiz</h2>
+            <div id="questionContainer"></div>
+            <button id="nextBtn" hidden>Next Question</button>
+            <button id="submitBtn" hidden>Submit Quiz</button>
+        </section>
+
+        <section id="resultSection" hidden>
+            <h2>Your Results</h2>
+            <div id="resultContainer"></div>
+            <button id="restartBtn">Create Another Quiz</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>QuizForge AI &copy; 2026 | Learn. Practice. Improve.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

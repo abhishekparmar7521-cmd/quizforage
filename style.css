@@ -1,0 +1,188 @@
+
+/* 1. Basic page settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4fa;
+    color: #20213a;
+    line-height: 1.6;
+}
+
+/* 2. Website header */
+.header {
+    background: #17172b;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    color: #a795ff;
+    font-size: 2.4rem;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #d0cfe0;
+}
+
+/* 3. Main content */
+.container {
+    width: min(700px, 92%);
+    margin: 35px auto;
+}
+
+/* 4. Quiz cards */
+.quiz-setup,
+#quizSection,
+#resultSection {
+    background: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(23, 23, 43, 0.08);
+}
+
+h2 {
+    margin-bottom: 8px;
+    color: #292044;
+}
+
+.quiz-setup > p {
+    margin-bottom: 18px;
+    color: #66667a;
+}
+
+/* 5. Form labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin: 16px 0 7px;
+}
+
+/* 6. Input and dropdown fields */
+input[type="text"],
+select {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d9d8e8;
+    border-radius: 9px;
+    background: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #8065e8;
+    box-shadow: 0 0 0 3px rgba(128, 101, 232, 0.12);
+}
+
+/* 7. Buttons */
+button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 9px;
+    background: #7657df;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #6041c6;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* 8. Messages */
+#message {
+    margin-top: 12px;
+    color: #6041c6;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* 9. Quiz questions */
+.question-card {
+    padding: 18px 0;
+    border-bottom: 1px solid #e7e5f0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin: 9px 0;
+    border: 1px solid #e2e0ee;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #f5f2ff;
+}
+
+.option input {
+    accent-color: #7657df;
+}
+
+.feedback {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.correct {
+    color: #16834a;
+}
+
+.incorrect {
+    color: #c03939;
+}
+
+/* 10. Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    color: #77758b;
+    font-size: 0.9rem;
+}
+
+/* 11. Mobile layout */
+@media (max-width: 480px) {
+    .header {
+        padding: 25px 15px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin: 22px auto;
+    }
+
+    .quiz-setup,
+    #quizSection,
+    #resultSection {
+        padding: 20px;
+    }
+}
